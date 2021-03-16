@@ -27,12 +27,17 @@ function GameOfOldLady() {
       if(cells.every(cell => cell === "O")) setWinner("O")
       if(cells.every(cell => cell === "X")) setWinner("X")
     });
-
+    
     checkDraw();
   };
 
+
+  
+  //O jogo resultava como empate. Eu apenas esqueci de mencionar
+  //no argumento que pra dar empate, também precisa não ter um vencedor
+  // xD
   const checkDraw = () => {
-    if(board.every(item => item !== "")) {
+    if(board.every(item => winner === null && item !== "" )) {
       setWinner("empate")
     }
   }

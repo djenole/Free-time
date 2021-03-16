@@ -60,11 +60,12 @@ const tabuleiro = {
                 this.board[this.winning_sequences[i][1]] == player &&
                 this.board[this.winning_sequences[i][2]] == player){
                     console.log('Venceu!');
-                    return i;
-            }
-        };
+                
+            return i;
+        }
+    };
         return -1;
-    },
+},
 
 
 
