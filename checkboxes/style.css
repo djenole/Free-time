@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     margin: 10px 0;
-    width: 200px;
+    width: 250px;
 }
 
 .toggle {
@@ -38,7 +38,7 @@ body {
 }
 
 .toggle:checked + .label {
-    background-color: #8e44ad;
+    background-color: #299b33;
 }
 
 .ball {
