@@ -28,7 +28,7 @@ function createTags(input) {
 }
 
 function randomSelect() {
-    const times = 30
+    const times = 15;
 
     const interval = setInterval(() => {
         const randomTag = pickRandomTag()
@@ -48,7 +48,7 @@ function randomSelect() {
 
             hightlightTag(randomTag)
         },150)
-    }, times * 300)
+    }, times * 250)
 
 }
 
